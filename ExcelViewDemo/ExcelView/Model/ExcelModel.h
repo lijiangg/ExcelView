@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "UIView+category.h"
 #import "Constant.h"
-
+#import "FactoryTool.h"
 @interface ExcelModel : NSObject
 
 @property (copy, nonatomic)NSString *title;

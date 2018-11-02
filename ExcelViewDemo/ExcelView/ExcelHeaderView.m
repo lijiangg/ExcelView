@@ -52,18 +52,14 @@
         NSString *title = _model.contentArray[index];
         UIButton *btn = [_scroView viewWithTag:index + itemTag + 1];
         if (!btn) {
-            btn = [UIButton buttonWithType:UIButtonTypeCustom];
+            btn = [FactoryTool getExcelItemButtonWithBackgroundColor:excelColor layerBorderWidth:1 layerBorderColor:[UIColor blackColor] titleColor:[UIColor redColor]];
         }
-        [btn setBackgroundColor:excelColor];
         [btn setTitle:title forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        btn.layerBorderWidth = 1;
-        btn.layerBorderColor = [UIColor blackColor];
         CGFloat x = excelItemSizeWidth * index;
         btn.frame = CGRectMake(x, 0, excelItemSizeWidth, [ExcelHeaderView headerHeight]);
         [_scroView addSubview:btn];
         
-        btn.tag = itemTag + 1 + index;
+        btn.tag = index + itemTag + 1;
         [btn addTarget:self action:@selector(itemOnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
 }

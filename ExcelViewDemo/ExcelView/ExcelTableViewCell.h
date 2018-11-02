@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *contentScroView;
 
 
-- (void)setModel:(ExcelModel *)model indexPath:(NSIndexPath *)indexPath;
+- (void)setModel:(ExcelModel *)model headerModel:(ExcelModel *)headerModel indexPath:(NSIndexPath *)indexPath;
 
 
 @property (copy, nonatomic) void(^itemOnClick)(UIButton *sender, NSIndexPath *indexPath, NSInteger index);

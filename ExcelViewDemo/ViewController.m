@@ -31,7 +31,12 @@
     contentModel.title = @"小刘";
     contentModel.contentArray = @[@"16",@"打游戏",@"开发",@"3944423@163.com",@"翠花",@"隐私",
                                   @"16",@"打游戏",@"开发",@"3944423@163.com",@"翠花",@"隐私"];
-    _excelView.dataArray = @[contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel];
+    
+    ExcelModel *noneModel = [ExcelModel new];
+    noneModel.title = @"小刘";
+    noneModel.contentArray = @[];
+
+    _excelView.dataArray = @[noneModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,noneModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,noneModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel,contentModel];
     
     [_excelView drawExcel];
 }

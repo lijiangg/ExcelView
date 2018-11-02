@@ -23,6 +23,7 @@
 		B101EE1F21860F2600CCD41E /* ExcelHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B101EE1E21860F2600CCD41E /* ExcelHeaderView.xib */; };
 		B101EE242186A7C700CCD41E /* ExcelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B101EE232186A7C700CCD41E /* ExcelModel.m */; };
 		B101EE282186D69D00CCD41E /* UIView+category.m in Sources */ = {isa = PBXBuildFile; fileRef = B101EE272186D69D00CCD41E /* UIView+category.m */; };
+		B1959BA1218C0195000738C6 /* FactoryTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B1959BA0218C0194000738C6 /* FactoryTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		B101EE262186D69D00CCD41E /* UIView+category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+category.h"; sourceTree = "<group>"; };
 		B101EE272186D69D00CCD41E /* UIView+category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+category.m"; sourceTree = "<group>"; };
 		B101EE292186E28C00CCD41E /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		B1959B9F218C0194000738C6 /* FactoryTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryTool.h; sourceTree = "<group>"; };
+		B1959BA0218C0194000738C6 /* FactoryTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +191,8 @@
 				B101EE262186D69D00CCD41E /* UIView+category.h */,
 				B101EE272186D69D00CCD41E /* UIView+category.m */,
 				B101EE292186E28C00CCD41E /* Constant.h */,
+				B1959B9F218C0194000738C6 /* FactoryTool.h */,
+				B1959BA0218C0194000738C6 /* FactoryTool.m */,
 			);
 			path = ext;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 			files = (
 				B101EE1921860D0D00CCD41E /* ExcelTableViewCell.m in Sources */,
 				B101EE242186A7C700CCD41E /* ExcelModel.m in Sources */,
+				B1959BA1218C0195000738C6 /* FactoryTool.m in Sources */,
 				B101EDE221860C5F00CCD41E /* ViewController.m in Sources */,
 				B101EDED21860C6200CCD41E /* main.m in Sources */,
 				B101EE1D21860F1C00CCD41E /* ExcelHeaderView.m in Sources */,

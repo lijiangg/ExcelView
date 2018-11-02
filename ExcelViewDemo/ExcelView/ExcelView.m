@@ -72,7 +72,7 @@ static NSString *headerID = @"ExcelHeaderView";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ExcelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
 
-    [cell setModel:_dataArray[indexPath.row] indexPath:indexPath];
+    [cell setModel:_dataArray[indexPath.row] headerModel:_headerModel indexPath:indexPath];
 
     
     __weak typeof(self) weakSelf = self;
