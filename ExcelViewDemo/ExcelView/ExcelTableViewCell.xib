@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ExcelTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4Y-bH-5f6">
+                        <rect key="frame" x="100" y="0.0" width="220" height="43.5"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </scrollView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZj-Wi-Vto">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="FMr-Os-ibH"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X4Y-bH-5f6" firstAttribute="leading" secondItem="xZj-Wi-Vto" secondAttribute="trailing" id="3uY-FC-xF0"/>
+                    <constraint firstItem="X4Y-bH-5f6" firstAttribute="top" secondItem="xZj-Wi-Vto" secondAttribute="top" id="OkZ-N7-SgG"/>
+                    <constraint firstItem="xZj-Wi-Vto" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UbK-Pl-Uyw"/>
+                    <constraint firstItem="xZj-Wi-Vto" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YAL-wE-LfQ"/>
+                    <constraint firstItem="X4Y-bH-5f6" firstAttribute="height" secondItem="xZj-Wi-Vto" secondAttribute="height" id="mYs-cw-xhi"/>
+                    <constraint firstAttribute="trailing" secondItem="X4Y-bH-5f6" secondAttribute="trailing" id="qEk-LJ-rpm"/>
+                    <constraint firstAttribute="bottom" secondItem="xZj-Wi-Vto" secondAttribute="bottom" id="vdD-pY-HAH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="contentScroView" destination="X4Y-bH-5f6" id="t4A-Vd-RZX"/>
+                <outlet property="titleButton" destination="xZj-Wi-Vto" id="kii-p1-Jlr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
