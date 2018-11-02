@@ -10,4 +10,4 @@ storyboard拖拽  简单 快捷
 
 求支持 ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️
 
-![image](https://github.com/lijiangg/ExcelView/blob/master/ExcelViewDemo/Untitled.gif)
+![image](https://github.com/lijiangg/-ExcelView/blob/master/Untitled.gif)
